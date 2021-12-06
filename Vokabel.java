@@ -3,7 +3,7 @@ public class Vokabel {
     String deutsch;
 
     public Vokabel(String pFremd, String pDeutsch){
-        String fremd = pFremd;
-        String deutsch = pDeutsch;
+         fremd = pFremd;
+         deutsch = pDeutsch;
     }
 }
