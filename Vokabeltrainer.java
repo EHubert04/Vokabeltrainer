@@ -5,17 +5,23 @@ public class Vokabeltrainer {
     static List<Vokabel> vokabelListe;
 
     public Vokabeltrainer(){
+        //Konstruktor Vokabeltrainer; nötig um static aus main aufzulösen
+        //VokabelListe erscchaffen, danach aufruf des menues 
         vokabelListe = new List<Vokabel>();
         menue();
     }
 
     public static void main(String[] args) {
+        //Eine Objekt vt vom Typ Vokabeltrainer erstellen
         Vokabeltrainer vt = new Vokabeltrainer();
     }
 
     void menue(){
+        //Auswahlmöglichkeiten ausgeben
         System.out.println("42) Testmethode aufrufen");
         Scanner input = new Scanner(System.in);
+
+        //Eingabe verarbeiten
         int auswahl = input.nextInt();
         if(auswahl == 42){
             Testmethode();
